@@ -120,3 +120,7 @@ for (let index in array) {
   console.log(array[index]); // Logs 1, 2, 3
 }
 ```
+
+
+
+![Alt text](image-9.png)
