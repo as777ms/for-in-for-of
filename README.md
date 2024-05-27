@@ -75,7 +75,15 @@ for(key in cost){
 ![Alt text](image-2.png)
 
 
+`for...of with an Array (recommended):`
 
+```js
+let array = [1, 2, 3];
+for (let value of array) {
+  console.log(value); // Logs 1, 2, 3
+}
+```
+`In summary, choose for...in when you need to iterate over the properties of an object and for...of when you need to iterate over the values of an iterable.`
 
 
 #### for in dar array kor mekuunad va misli for i oddi mebowad
@@ -101,3 +109,14 @@ for(let number in numbers){
 >[!TIP]
 >remember that for in is for=Object and for of is for =Arrays
 ![Alt text](image-8.png)
+
+
+### Example Comparison:
+`for...in with an Array (not recommended):`
+```js
+let array = [1, 2, 3];
+for (let index in array) {
+  console.log(index); // Logs 0, 1, 2
+  console.log(array[index]); // Logs 1, 2, 3
+}
+```
